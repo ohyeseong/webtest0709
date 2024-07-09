@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+.wrap{
+    width: 1200px;
+    /* height: 700px; */
+    margin: 0 auto;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+/* 헤더영역 */
+.header{
+    height: 100px;
+    background-color: yellow;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid black; */
+    padding-top: 30px;
+}
+.logo a{}
+.logo a img{}
+
+.nav{
+    float: right;
+}
+.main{
+    margin: 50px 30px 0 0;
+}
+
+.main>li{
+    float: left;
+    position: relative;
+}
+.main>li>a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ff5050;
+    color: #fffcf1;
+    font-size: 18px;
+}
+.main>li:hover>a{
+    background-color: #5b9bd5;
+}
+
+.sub{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(29, 156, 1);
+}
+
+.sub li a:hover{
+    color: aqua;
+}
+
+.sub_bg{
+    width: 1200px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: rgb(29, 156, 1);
+    z-index: 1;
+    display: none;
+}
+
+/* 콘테이너 영역 */
+.container{
+    height: 500px;
+    /* background-color: orange; */
+}
+
+/* 뷰 영역 */
+.view{
+    height: 300px;
+    background-color: yellow;
+}
+
+.fade{
+    height: 300px;
+    position: relative;
+}
+
+.fade li{
+    height: 300px;
+    position: absolute;
+}
+
+.container{
+    height: 500px;
+    /* background-color: teal; */
+}
+
+.contents{}
+.contents h2{
+    width: 100px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    background-color: rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+.contents ul{
+    width: 100%;
+    height: 165px;
+    background-color: rgb(192, 192, 192);
+    border-radius: 0 10px 10px;
+    padding: 10px;
+}
+
+.contents>div{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+.notice{}
+.notice ul{}
+.notice ul li{
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px dashed gray;
+}
+.notice ul li a{
+    float: left;
+    width: 75%;
+    text-wrap: nowrap;
+    /* text-wrap: nowrap; 줄이 영역을 넘쳐도 줄바꿈하지 않음 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; 단어 짤리는것을 ..으로 바꿔줌 */
+}
+
+.notice ul li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.notice ul li span{
+    float: right;
+}
+
+.gallery{}
+.gallery ul{
+    text-align: center;
+}
+.gallery ul li{
+    display: inline-block;
+}
+.gallery ul li a{}
+.gallery ul li a img{
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.gallery ul li a img:hover{
+    opacity: 1;
+}
+
+.baro{}
+.baro p{
+    height: 165px;
+    background-color: rgb(192, 192, 192);
+    padding: 4px 0;
+}
+.baro p a{}
+.baro p a img{
+
+}
+
+/* 푸터영역 */
+.footer{
+    height: 100px;
+    background-color: rgb(226, 201, 249);
+}
+
+.f_left{
+    width: 1000px;
+    height: 100px;
+    float: left;
+    /* background-color: yellow; */
+}
+
+.f_left>div{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.f_menu{
+    border-bottom: 1px solid gray;
+}
+
+.f_menu a{
+    
+}
+
+.f_menu a::after{
+    content: "|";
+    padding: 0 15px;
+}
+
+.f_menu a:last-child::after{
+    display: none;
+}
+
+.family{
+    width: 200px;
+    height: 100px;
+    float: left;
+    /* background-color: red; */
+    text-align: center;
+    padding-top: 22px;
+}
+
+.family select{
+    width: 150px;
+    height: 50px;
+}
+
+/* 팝업 영역 */
+
+.popup{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border: 10px solid #084a5d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: none;
+}
+
+.popup h3{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.popup p{
+    font-size: 16px;
+    text-align: justify;
+    word-spacing: -1px;
+}
+
+.close{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
